@@ -1,0 +1,22 @@
+{
+	"name": "helv3",
+	"version": "3.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server",
+		"server": "nodemon server/server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"config": "^3.3.2",
+		"node-hue-api": "^4.0.9"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.4"
+	}
+}
